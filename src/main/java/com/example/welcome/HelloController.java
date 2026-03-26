@@ -25,7 +25,7 @@ public class HelloController {
     protected void abrirVentana(){
         if (("admin".equals(intUsuario.getText()))&&("admin123".equals(intContrasenia.getText()))) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("SegundaVista2.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("BienvenidoUsuario.fxml"));
                 Parent root = loader.load();
                 Stage stage = new Stage();
                 stage.setTitle("SegundaVista2");
