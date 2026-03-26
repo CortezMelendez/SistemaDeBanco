@@ -11,10 +11,10 @@
    <Pane prefHeight="200.0" prefWidth="200.0">
       <children>
       
-          <Label fx:id="welcomeText" layoutX="79.0" layoutY="92.0" text="Introduce la contraseña" />
-         <Label layoutX="88.0" layoutY="25.0" text="Introduce el usuario" />
-         <TextField layoutX="67.0" layoutY="54.0" />
-         <TextField layoutX="67.0" layoutY="125.0" />
+          <Label fx:id="contrasenia" layoutX="79.0" layoutY="92.0" text="Introduce la contraseña" />
+         <Label fx:id="usuario" layoutX="88.0" layoutY="25.0" text="Introduce el usuario" />
+         <TextField fx:id="intUsuario" layoutX="67.0" layoutY="54.0" />
+         <TextField fx:id="intContrasenia" layoutX="67.0" layoutY="125.0" />
          <Button layoutX="115.0" layoutY="161.0" mnemonicParsing="false" onAction="#abrirVentana" text="Ingresar" />
       </children>
    </Pane>
