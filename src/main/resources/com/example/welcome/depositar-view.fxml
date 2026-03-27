@@ -3,15 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welcome.depositarController">
    <children>
       <Pane layoutX="33.0" layoutY="29.0" prefHeight="350.0" prefWidth="540.0">
          <children>
-            <TextField layoutX="196.0" layoutY="81.0" />
+            <TextField fx:id="getDeposito" layoutX="196.0" layoutY="81.0" />
             <Label layoutX="170.0" layoutY="37.0" text="Ingrese el monto que desea depositar" />
-            <Label layoutX="188.0" layoutY="194.0" prefHeight="17.0" prefWidth="164.0" />
-            <Button layoutX="236.0" layoutY="123.0" mnemonicParsing="false" text="Depositar" />
+            <Label fx:id="saldo" layoutX="188.0" layoutY="194.0" prefHeight="17.0" prefWidth="164.0" />
+            <Button layoutX="236.0" layoutY="123.0" mnemonicParsing="false" onAction="#depositar" text="Depositar" />
+            <Button layoutX="36.0" layoutY="301.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+            <Label fx:id="logs" layoutX="145.0" layoutY="259.0" prefHeight="17.0" prefWidth="251.0" textFill="#ee0101" />
          </children>
       </Pane>
    </children>
