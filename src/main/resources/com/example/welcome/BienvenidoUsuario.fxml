@@ -4,25 +4,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welcome.Bienvenido">
+<AnchorPane prefHeight="150.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welcome.Bienvenido">
    <children>
-      <Pane layoutX="18.0" layoutY="5.0" prefHeight="389.0" prefWidth="564.0">
+      <Pane layoutX="18.0" layoutY="5.0" prefHeight="206.0" prefWidth="555.0">
          <children>
-            <Label layoutX="194.0" layoutY="14.0" text="BIenvenido..!" textFill="#e40808">
+            <Label layoutX="194.0" layoutY="14.0" text="Bienvenido..! " textFill="#e40808">
                <font>
                   <Font size="27.0" />
                </font>
             </Label>
-            <Label layoutX="186.0" layoutY="113.0" prefHeight="50.0" prefWidth="192.0" text="Tu usario es &quot;admin&quot;">
+            <Label layoutX="171.0" layoutY="68.0" prefHeight="50.0" prefWidth="206.0" text="Selecciona una opcion.">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label layoutX="147.0" layoutY="170.0" prefHeight="50.0" prefWidth="270.0" text="Tu contraseña es &quot;admin123&quot;">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
+            <Button layoutX="38.0" layoutY="131.0" mnemonicParsing="false" onAction="#abrirSaldo" text="Consultar Saldo" />
+            <Button layoutX="174.0" layoutY="131.0" mnemonicParsing="false" onAction="#depositarSaldo" text="Depositar Saldo" />
+            <Button layoutX="327.0" layoutY="131.0" mnemonicParsing="false" onAction="#retirarSaldo" text="Retirar Saldo" />
+            <Button layoutX="456.0" layoutY="131.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
          </children>
       </Pane>
       <Label text="Label" />
