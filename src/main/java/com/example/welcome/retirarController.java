@@ -20,4 +20,11 @@ public class retirarController extends ClasePadreControladores{
     @FXML
     private Label logs;
 
+    @FXML
+    public void retirar() {
+        double retiro = Double.parseDouble(getRetiro.getText());
+        ClasePadreBanco.retirar(retiro);
+        saldo.setText("Tu nuevo saldo es: $" + String.format("%.2f", ClasePadreBanco.getSaldo()));
+        logs.setText("Tu ultimo retiro fue de: $" + String.format("%.2f", retiro));
+    }
 }
