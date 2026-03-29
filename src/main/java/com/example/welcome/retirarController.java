@@ -27,4 +27,22 @@ public class retirarController extends ClasePadreControladores{
         saldo.setText("Tu nuevo saldo es: $" + String.format("%.2f", ClasePadreBanco.getSaldo()));
         logs.setText("Tu ultimo retiro fue de: $" + String.format("%.2f", retiro));
     }
+
+    public void volver(ActionEvent event) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("BienvenidoUsuario.fxml"));
+                Parent root = loader.load();
+
+                Stage stageNuevo = new Stage();
+                stageNuevo.setTitle("Menu");
+                stageNuevo.setScene(new Scene(root));
+                stageNuevo.show();
+
+                Stage stageActual = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+                stageActual.close();
+
+            } catch (IOException e) {
+                logs.setText("Error al cargar la ventana");
+            }
+    }
 }
