@@ -24,20 +24,5 @@ public class depositarController {
         saldo.setText("Tu saldo nuevo saldo es: "+getDeposito.getText()+"");
     }
 
-    public void volver(ActionEvent Event){
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("BienvenidoUsuario.fxml"));
-            Parent root = loader.load();
 
-            Stage stage = new Stage();
-            stage.setTitle("Menu");
-            stage.setScene(new Scene(root));
-            stage.show();
-
-            Stage currentStage = (Stage) logs.getScene().getWindow();
-            currentStage.close();
-        } catch (IOException e) {
-            logs.setText("Error al cargar la ventana");
-        }
-    }
 }

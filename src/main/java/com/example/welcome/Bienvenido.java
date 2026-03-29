@@ -21,7 +21,7 @@ public class Bienvenido extends ClasePadreControladores {
     }
 
     @FXML
-    protected Bienvenido salir(ActionEvent event) {
+    protected void salir(ActionEvent event) {
         cambiarVentana(event, "hello-view.fxml");
     }
 
