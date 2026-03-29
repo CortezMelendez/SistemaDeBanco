@@ -13,24 +13,43 @@ public class HelloController extends ClasePadreControladores {
     private TextField intContrasenia;
     @FXML
     private Label error;
+    @FXML
+    private int intentos=3;
+    @FXML
+    private Label usuario;
+    @FXML
+    private Label contrasenia;
 
     @FXML
     protected void abrirVentana(ActionEvent event){
 
-        if (("admin".equals(intUsuario.getText())) &&
-                ("admin123".equals(intContrasenia.getText()))) {
+            if (("admin".equals(intUsuario.getText())) &&
+                    ("admin123".equals(intContrasenia.getText()))) {
 
-            cambiarVentana(event, "BienvenidoUsuario.fxml");
+                cambiarVentana(event, "BienvenidoUsuario.fxml");
 
-        } else {
-            error.setVisible(true);
-        }
+            } else {
+                intentos--;
+                error.setVisible(true);
+                error.setText("Usuario o contraseña incorrectos. Intentos restantes: " + intentos);
 
-        }
+                if (intentos == 0) {
+                    error.setText("Cuenta bloqueada");
+                    intUsuario.setVisible(false);
+                    intContrasenia.setVisible(false);
+                    usuario.setVisible(false);
+                    contrasenia.setVisible(false);
+
+                }
+            }
+
+
+    }
     @FXML
     protected void salir(ActionEvent event) {
         System.exit(0);
     }
+
     }
 
 

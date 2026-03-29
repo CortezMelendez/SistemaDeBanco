@@ -1,20 +1,23 @@
 package com.example.welcome;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 
-public class HelloController2 {
+
+public class HelloController2 extends  ClasePadreControladores {
 
     @FXML
     private Label resultado;
 
     @FXML
-    protected void saldo(){
-
-
+    protected void saldo() {
+        resultado.setText("El Saldo es: $" + ClasePadreBanco.getSaldo());
     }
+
+    @FXML
+    protected void salir(ActionEvent event) {
+        cambiarVentana(event, "BienvenidoUsuario.fxml");
+    }
+
 }
