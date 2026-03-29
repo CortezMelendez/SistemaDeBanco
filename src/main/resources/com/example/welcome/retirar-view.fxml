@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.welcome.retirarController">
+    <children>
+        <Pane layoutX="33.0" layoutY="29.0" prefHeight="350.0" prefWidth="540.0">
+            <children>
+                <Label layoutX="170.0" layoutY="37.0" text="Ingrese el monto que desea retirar" />
+                <TextField fx:id="getRetiro" layoutX="196.0" layoutY="81.0" />
+                <Button layoutX="236.0" layoutY="123.0" mnemonicParsing="false" onAction="#retirar" text="Retirar" />
+                <Label fx:id="saldo" layoutX="188.0" layoutY="194.0" prefHeight="17.0" prefWidth="164.0" />
+                <Label fx:id="logs" layoutX="145.0" layoutY="225.0" prefHeight="17.0" prefWidth="251.0" textFill="#ee0101" />
+                <Button layoutX="29.0" layoutY="292.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
