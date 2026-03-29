@@ -24,6 +24,7 @@ public class Bienvenido extends ClasePadreControladores {
 
     @FXML
     protected void retirarSaldo(ActionEvent event) {
+        cambiarVentana(event,"retirar-view.fxml");
 
     }
 
