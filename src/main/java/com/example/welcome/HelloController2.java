@@ -14,7 +14,7 @@ public class HelloController2 extends ClasePadreBanco {
 
     @FXML
     protected void saldo() {
-        resultado.setText("Saldo: $" + ClasePadreBanco.getSaldo());
+        resultado.setText("El Saldo: $" + ClasePadreBanco.getSaldo());
     }
 
     @FXML
