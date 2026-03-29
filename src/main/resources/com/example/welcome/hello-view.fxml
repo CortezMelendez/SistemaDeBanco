@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="324.0" prefWidth="322.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.welcome.HelloController">
+<VBox alignment="CENTER" prefHeight="324.0" prefWidth="322.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welcome.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -15,7 +15,8 @@
          <Label fx:id="usuario" layoutX="88.0" layoutY="25.0" text="Introduce el usuario" />
          <TextField fx:id="intUsuario" layoutX="67.0" layoutY="54.0" />
          <TextField fx:id="intContrasenia" layoutX="67.0" layoutY="125.0" />
-         <Button layoutX="115.0" layoutY="161.0" mnemonicParsing="false" onAction="#abrirVentana" text="Ingresar" />
+         <Button layoutX="112.0" layoutY="161.0" mnemonicParsing="false" onAction="#abrirVentana" text="Ingresar" />
       </children>
    </Pane>
+   <Label fx:id="error" prefHeight="17.0" prefWidth="170.0" />
 </VBox>

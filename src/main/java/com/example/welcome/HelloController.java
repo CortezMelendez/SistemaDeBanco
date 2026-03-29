@@ -13,7 +13,7 @@ public class HelloController extends ClasePadreControladores {
     private TextField intContrasenia;
     @FXML
     private Label error;
-    @FXML
+
     private int intentos=3;
     @FXML
     private Label usuario;
