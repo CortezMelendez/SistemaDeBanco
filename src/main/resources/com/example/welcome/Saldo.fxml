@@ -16,7 +16,7 @@
 
         <Label fx:id="resultado" layoutX="286.0" layoutY="200.0" />
 
-        <Button layoutX="259.0" layoutY="333.0" mnemonicParsing="false" onAction="#regresar" text="Regresar al menu" />
+        <Button layoutX="259.0" layoutY="333.0" mnemonicParsing="false" onAction="#salir" text="Regresar al menu" />
 
     </children>
 </AnchorPane>
