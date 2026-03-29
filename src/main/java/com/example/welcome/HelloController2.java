@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class HelloController2 extends ClasePadreBanco {
+public class HelloController2 extends  ClasePadreBanco {
 
     @FXML
     private Label resultado;
