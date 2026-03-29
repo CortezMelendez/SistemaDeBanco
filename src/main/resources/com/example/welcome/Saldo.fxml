@@ -12,11 +12,11 @@
             </font>
         </Label>
 
-        <Button layoutX="199.0" layoutY="226.0" mnemonicParsing="false" onAction="#saldo" prefHeight="66.0" prefWidth="228.0" text="Mostrar Saldo" />
+        <Button layoutX="199.0" layoutY="241.0" mnemonicParsing="false" onAction="#saldo" prefHeight="66.0" prefWidth="228.0" text="Mostrar Saldo" />
 
         <Label fx:id="resultado" layoutX="286.0" layoutY="200.0" />
 
-        <Button layoutX="259.0" layoutY="344.0" mnemonicParsing="false" onAction="#regresar" text="Regresar al Menú" />
+        <Button layoutX="259.0" layoutY="336.0" mnemonicParsing="false" onAction="#regresar" text="Regresar al Menú" />
 
     </children>
 </AnchorPane>
