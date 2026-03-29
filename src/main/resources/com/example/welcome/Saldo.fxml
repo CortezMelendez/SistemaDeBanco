@@ -5,13 +5,18 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welcome.HelloController2">
-   <children>
-      <Button layoutX="186.0" layoutY="269.0" mnemonicParsing="false" onAction="#saldo" prefHeight="66.0" prefWidth="251.0" text="Saldo Consultado" />
-      <Label fx:id="resultado" layoutX="286.0" layoutY="200.0" />
-      <Label alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="130.0" prefWidth="297.0" text="CONSULTA DE SALDO" textFill="#164f78">
-         <font>
-            <Font name="Bold Italic Art" size="28.0" />
-         </font>
-      </Label>
-   </children>
+    <children>
+        <Label alignment="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="130.0" prefWidth="297.0" text="CONSULTA DE SALDO">
+            <font>
+                <Font name="Bold Italic Art" size="28.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="199.0" layoutY="226.0" mnemonicParsing="false" onAction="#saldo" prefHeight="66.0" prefWidth="228.0" text="Mostrar Saldo" />
+
+        <Label fx:id="resultado" layoutX="286.0" layoutY="200.0" />
+
+        <Button layoutX="259.0" layoutY="344.0" mnemonicParsing="false" onAction="#regresar" text="Regresar al Menú" />
+
+    </children>
 </AnchorPane>
